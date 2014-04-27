@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gbl_contact_backgournd" >
+
+        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageViewContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/logo_22" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35" >
+
+            <ToggleButton
+                android:id="@+id/toggleButtonVibrateRing"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/toggle_vibrate_ring"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonOnOffVibrateOrRing"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:textOn=""
+                android:textOff=""
+                android:layout_alignBaseline="@+id/toggleButtonVibrateRing"
+                android:layout_alignBottom="@+id/toggleButtonVibrateRing"
+                android:layout_marginRight="21dp"
+                android:layout_toLeftOf="@+id/toggleButtonVibrateRing"
+                android:background="@drawable/toggle_checked_unchecked"
+                android:text="ToggleButton" />
+
+            <TextView
+                android:id="@+id/textViewContactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

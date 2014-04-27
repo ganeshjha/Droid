@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Background"
+    android:orientation="vertical" >
+
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp" 
+    android:background="@drawable/filter_bar"
+    >
+    
+    <Button
+   android:id="@+id/backButton" android:text="Back" android:textColor="@color/white" 
+ android:layout_width="50dp" 
+  android:layout_height="30dp" 
+  android:layout_centerVertical="true"
+  android:layout_marginLeft="5dp" 
+  android:textSize="15sp"
+  android:textStyle="bold"
+
+  android:background="@drawable/back_button"
+  
+   /> 
+   
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:layout_marginRight="5dp"
+         android:text="@string/user_register"
+         android:textColor="@color/white"
+         android:textSize="16sp"
+         android:textStyle="bold" />
+
+ </RelativeLayout>
+ 
+<ScrollView 
+
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:fadingEdge="none"
+  android:id="@+id/profilecreateview"
+  
+  
+  >  
+  
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+ 
+<RelativeLayout 
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+     android:layout_margin="10dp"
+    
+    android:background="@drawable/edittextbackground" >
+     
+    
+     <TextView 
+         android:id="@+id/mobileEditText"
+     	android:text="Email"
+    	android:textColor="#000000"
+     	android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	 android:textSize="14sp"
+         android:layout_centerVertical="true"
+     	 android:layout_marginLeft="10dp">
+     	
+         
+     </TextView>
+
+     <EditText
+         android:id="@+id/emailedit"
+         android:layout_width="190dp"
+         android:layout_height="40dp"
+         android:layout_alignBaseline="@+id/mobileEditText"
+         android:layout_alignBottom="@+id/mobileEditText"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="16dp"
+         android:ems="10"
+         android:paddingLeft="15dp"
+         android:singleLine="true"
+         android:inputType="textEmailAddress"
+         android:textColor="#000000"
+         android:textSize="14sp"
+         android:background="@android:color/transparent" >
+
+         <requestFocus />
+     </EditText>
+  
+     </RelativeLayout>
+ 
+<RelativeLayout 
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+     android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+    
+    android:background="@drawable/edittextbackground" >
+     
+    
+     <TextView 
+         android:id="@+id/username"
+     	android:text="Username"
+    	android:textColor="#000000"
+     	android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	 android:textSize="14sp"
+         android:layout_centerVertical="true"
+     	 android:layout_marginLeft="10dp">
+     	
+         
+     </TextView>
+
+
+     <EditText
+         android:id="@+id/usernameedit"
+         android:layout_width="190dp"
+         android:layout_height="40dp"
+         
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="16dp"
+         android:ems="10"
+         android:paddingLeft="15dp"
+         android:singleLine="true"
+         android:textColor="#000000"
+         android:textSize="14sp"
+         android:inputType="textPersonName"
+         android:background="@android:color/transparent" >
+
+         
+     </EditText>
+  
+     </RelativeLayout>
+     
+<RelativeLayout 
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/edittextbackground" >
+     
+    
+     <TextView 
+         android:id="@+id/emailEditText"
+     	android:text="Password"
+    	android:textColor="#000000"
+     	android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	 android:textSize="14sp"
+         android:layout_centerVertical="true"
+     	 android:layout_marginLeft="10dp">
+     	
+         
+     </TextView>
+
+
+     <EditText
+         android:id="@+id/passwordedit"
+         android:layout_width="190dp"
+         android:layout_height="40dp"
+         
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="16dp"
+         android:ems="10"
+         android:paddingLeft="15dp"
+         android:singleLine="true"
+         android:textColor="#000000"
+         android:textSize="14sp"
+         android:inputType="textPassword"
+         android:background="@android:color/transparent" >
+
+        
+     </EditText>
+  
+     </RelativeLayout>
+
+<RelativeLayout 
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/edittextbackground" >
+     
+     <TextView
+         android:id="@+id/zipcode"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="10dp"
+         android:text="Name"
+         android:textColor="#000000"
+         android:textSize="14sp" >
+         
+     </TextView>
+
+
+     <EditText
+         android:id="@+id/nameedit"
+         
+         android:layout_width="190dp"
+         android:layout_height="40dp"
+         
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="16dp"
+         android:ems="10"
+         android:paddingLeft="15dp"
+         android:singleLine="true"
+         android:textColor="#000000"
+         android:textSize="14sp"
+         android:inputType="textPersonName"
+         android:background="@android:color/transparent" >
+
+        
+     </EditText>
+  
+     </RelativeLayout>
+
+<RelativeLayout 
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/edittextbackground"
+    android:id="@+id/addphotolay" >
+     
+     <TextView
+         android:id="@+id/photo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="10dp"
+         android:text="Mobile"
+         android:textColor="#000000"
+         android:textSize="14sp" >
+         
+     </TextView>
+
+
+     <EditText
+         android:id="@+id/mobilenumberedit"
+         android:layout_width="190dp"
+         android:layout_height="40dp"
+         
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="16dp"
+         android:ems="10"
+         android:paddingLeft="15dp"
+         android:singleLine="true"
+         android:textColor="#000000"
+         android:textSize="14sp"
+         android:hint="eg: +91989999999"
+         android:clickable="false"
+         android:inputType="number"
+         android:background="@android:color/transparent" >
+
+        
+     </EditText>
+  
+     </RelativeLayout>
+  
+  <Button
+      android:id="@+id/register"
+      android:layout_width="100dp"
+      android:layout_height="30dp"
+      android:layout_gravity="right"
+      android:layout_margin="10dp"
+      android:background="@anim/buttonstyle"
+      android:text="@string/user_register"
+      android:textColor="@color/white"
+      android:textSize="14sp"
+      android:textStyle="bold" />
+
+  </LinearLayout>
+  </ScrollView>
+  
+           
+
+</LinearLayout>

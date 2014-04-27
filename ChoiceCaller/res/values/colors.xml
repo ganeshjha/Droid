@@ -1,0 +1,20 @@
+
+    <resources>
+        <color name="white">#FFFFFF</color>
+        <color name="black">#000000</color>
+        <color name="left_most">#0886b6</color>
+        <color name="middle">#077fb1</color>
+        <color name="Right_most">#0073a9</color>
+        <color name="Background">#e3e3e3</color>
+        <color name="Text_color">#0fc3fe</color>
+        <color name="button_color">#00c0ff</color>
+        <color name="gbl_bck_color">#e4e4e4</color>
+        <color name="register_backgound_color">#ecf0f1</color>
+        <color name="imagebackgraund">#067eb0</color>
+        
+        <color name="relativebackgournd">#0785b5</color>
+        <color name="gbl_contact_backgournd">#e2e2e2</color>
+       	
+        <color name="text_color">#4C4646</color>
+        
+    </resources>

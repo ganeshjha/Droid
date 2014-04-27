@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"    
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/Background">"
+
+        <TextView
+            android:id="@+id/textViewContactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="choice caller"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Text_color"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/button_color"
+        android:text="@string/user_register"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/logo_second_relative"
+        android:layout_centerHorizontal="true"        
+        android:layout_margin="20dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/register_backgound_color"
+        android:gravity="center_horizontal" >
+
+        <EditText
+            android:id="@+id/unameEditText"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            
+            android:background="@android:color/white"
+            android:hint="@string/usrnm"
+            android:paddingLeft="30dp"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="275dp"
+            android:layout_height="1dp"
+            android:layout_above="@+id/emailEditText"
+            android:layout_below="@+id/unameEditText"            
+            android:background="@android:color/black" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="275dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/unameEditText"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="@string/pwd"
+            android:inputType="textPassword"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:paddingLeft="30dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/emailEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/button_color"
+            android:text="@string/user_login"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/loginorregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/forgot"
+            android:textColor="@color/Text_color" />
+
+        <ImageView
+            android:id="@+id/imageviewusericon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/unameEditText"
+            android:layout_alignLeft="@+id/unameEditText"
+            android:layout_alignTop="@+id/unameEditText"
+            android:src="@drawable/usericon_22" />
+
+        <ImageView
+            android:id="@+id/imageViewpasswordicon"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/emailEditText"
+            android:layout_alignLeft="@+id/emailEditText"
+            android:layout_alignTop="@+id/emailEditText"
+            android:src="@drawable/passwordicon_22" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logo_second_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="@color/relativebackgournd" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/imagebackgraund"
+            android:src="@drawable/circularblack" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

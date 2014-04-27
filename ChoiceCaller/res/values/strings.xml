@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ChoiceCaller</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="usrnm">Username</string>
+    <string name="pwd">Password</string>
+    
+    <string name="nm">Name</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    
+    
+    <string name="user_login">LOGIN</string>
+    <string name="user_register">REGISTER</string>
+    <string name="send_email">SEND EMAIL</string>
+    
+    <string name="str_contact_list">CONTACT LIST</string>
+    <string name="str_search">Search</string>
+    <string name="forgot"><html><u>Lost your password?</u></html></string>
+    <string name="login_or_Register"><html><u>LOGIN | REGISTER</u></html></string>
+    <string name="rmbme">remember me</string>
+    
+    
+    <string name="gbl_app_eff">GLOBAL APPLICATION EFFECT</string>
+    <string name="logout">LOGOUT</string>
+</resources>
